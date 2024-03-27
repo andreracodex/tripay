@@ -1,56 +1,19 @@
 {
     "name": "andreracodex/tripay",
-    "description": "Tripay Payment Api Laravel 10",
-    "keywords": [
-        "racodex",
-        "tripay",
-        "andre"
-    ],
-    "homepage": "https://github.com/andreracodex/tripay",
+    "description": "Laravel 10 Tripay API",
     "type": "library",
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Andreracodex\\Tripay\\": "src"
+            "Andreracodex\\Tripay\\": "src/"
         }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "Andreracodex\\Tripay\\Tests\\": "tests"
-        }
-    },
-    "scripts": {
-        "test": "vendor/bin/phpunit",
-        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
-    },
-    "config": {
-        "sort-packages": true
     },
     "authors": [
         {
             "name": "racodex",
-            "email": "racodex@gmail.com",
-            "role": "Developer"
+            "email": "racodex@gmail.com"
         }
     ],
-    "minimum-stability": "dev",
-    "require": {
-        "php": "^7.4|^8.0|^8.1|^8.2",
-        "guzzlehttp/guzzle": "^7.0",
-        "illuminate/support": "^10.18"
-    },
-    "require-dev": {
-        "orchestra/testbench": "^8",
-        "phpunit/phpunit": "^9.0"
-    },
-    "extra": {
-        "laravel": {
-            "providers": [
-                "Andreracodex\\Tripay\\TripayServiceProvider"
-            ],
-            "aliases": {
-                "Tripay": "Andreracodex\\Tripay\\TripayFacade"
-            }
-        }
-    }
+    "minimum-stability": "stable",
+    "require": {}
 }
