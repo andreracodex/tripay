@@ -1,0 +1,14 @@
+{
+    "name": "andreracodex/tripay",
+    "description": "Tripay Payment Api Laravel 10",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "racodex",
+            "email": "racodex@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
