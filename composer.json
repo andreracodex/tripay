@@ -16,6 +16,6 @@
     ],
     "minimum-stability": "stable",
     "require": {
-        "andreracodex/tripay": "^1.0"
+        
     }
 }
