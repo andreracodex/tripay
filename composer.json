@@ -8,6 +8,28 @@
             "Andreracodex\\Tripay\\": "src/"
         }
     },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Andreracodex\\Tripay\\TripayServiceProvider"
+            ],
+            "aliases": {
+                "Tripay": "Andreracodex\\Tripay\\Facades\\Tripay"
+            }
+        }
+    },
     "authors": [
         {
             "name": "racodex",
@@ -16,6 +38,12 @@
     ],
     "minimum-stability": "stable",
     "require": {
-        
+        "php": "^7.4|^8.0",
+        "illuminate/support": "^8.0|^9.0",
+        "guzzlehttp/guzzle": "^6.5.5|^7.0.1"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^6.0",
+        "phpunit/phpunit": "^9.0"
     }
 }
