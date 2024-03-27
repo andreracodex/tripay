@@ -1,7 +1,6 @@
 {
     "name": "andreracodex/tripay",
     "description": "Tripay Payment Api Laravel 10",
-    "version": "1.0.0",
     "keywords": [
         "racodex",
         "tripay",
@@ -38,8 +37,7 @@
     "require": {
         "php": "^7.4|^8.0|^8.1|^8.2",
         "guzzlehttp/guzzle": "^7.0",
-        "illuminate/support": "^10.18",
-        "andreracodex/tripay": "^1.0"
+        "illuminate/support": "^10.18"
     },
     "require-dev": {
         "orchestra/testbench": "^8",
