@@ -3,6 +3,11 @@
     "description": "Tripay Payment Api Laravel 10",
     "type": "library",
     "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Andreracodex\\Tripay\\": "tripay/"
+        }
+    },
     "authors": [
         {
             "name": "racodex",
@@ -10,5 +15,7 @@
         }
     ],
     "minimum-stability": "dev",
-    "require": {}
+    "require": {
+        "php": "^8.2"
+    }
 }
