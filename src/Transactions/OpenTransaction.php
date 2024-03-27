@@ -1,14 +1,14 @@
 <?php
 
-namespace Nekoding\Tripay\Transactions;
+namespace Andreracodex\Tripay\Transactions;
 
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Validator;
-use Nekoding\Tripay\Exceptions\InvalidCredentialException;
-use Nekoding\Tripay\Exceptions\InvalidSignatureHashException;
-use Nekoding\Tripay\Networks\HttpClient;
-use Nekoding\Tripay\Signature;
-use Nekoding\Tripay\Validator\CreateOpenTransactionFormValidation;
+use Andreracodex\Tripay\Exceptions\InvalidCredentialException;
+use Andreracodex\Tripay\Exceptions\InvalidSignatureHashException;
+use Andreracodex\Tripay\Networks\HttpClient;
+use Andreracodex\Tripay\Signature;
+use Andreracodex\Tripay\Validator\CreateOpenTransactionFormValidation;
 
 class OpenTransaction implements Transaction
 {
@@ -87,7 +87,7 @@ class OpenTransaction implements Transaction
     /**
      * @param array $data
      * @return string
-     * @throws \Nekoding\Tripay\Exceptions\InvalidCredentialException
+     * @throws \Andreracodex\Tripay\Exceptions\InvalidCredentialException
      */
     public function setSignatureHash(array $data): string
     {
@@ -103,7 +103,7 @@ class OpenTransaction implements Transaction
      * @param  string $uuid
      * @param  array $data
      * @return Transaction
-     * @throws \Nekoding\Tripay\Exceptions\InvalidCredentialException
+     * @throws \Andreracodex\Tripay\Exceptions\InvalidCredentialException
      */
     public function getDaftarPembayaran(string $uuid, array $data = []): Transaction
     {

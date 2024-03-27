@@ -1,15 +1,15 @@
 <?php
 
-namespace Nekoding\Tripay;
+namespace Andreracodex\Tripay;
 
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Validator;
-use Nekoding\Tripay\Exceptions\InvalidTransactionException;
-use Nekoding\Tripay\Exceptions\TripayValidationException;
-use Nekoding\Tripay\Networks\HttpClient;
-use Nekoding\Tripay\Transactions\CloseTransaction;
-use Nekoding\Tripay\Transactions\OpenTransaction;
-use Nekoding\Tripay\Transactions\Transaction;
+use Andreracodex\Tripay\Exceptions\InvalidTransactionException;
+use Andreracodex\Tripay\Exceptions\TripayValidationException;
+use Andreracodex\Tripay\Networks\HttpClient;
+use Andreracodex\Tripay\Transactions\CloseTransaction;
+use Andreracodex\Tripay\Transactions\OpenTransaction;
+use Andreracodex\Tripay\Transactions\Transaction;
 
 class Tripay
 {

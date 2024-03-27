@@ -1,6 +1,6 @@
 <?php
 
-namespace Nekoding\Tripay\Validator;
+namespace Andreracodex\Tripay\Validator;
 
 interface Validation
 {

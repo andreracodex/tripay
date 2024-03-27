@@ -1,9 +1,9 @@
 <?php
 
-namespace Nekoding\Tripay;
+namespace Andreracodex\Tripay;
 
 use Illuminate\Support\ServiceProvider;
-use Nekoding\Tripay\Networks\HttpClient;
+use Andreracodex\Tripay\Networks\HttpClient;
 
 class TripayServiceProvider extends ServiceProvider
 {

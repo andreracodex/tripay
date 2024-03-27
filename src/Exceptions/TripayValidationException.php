@@ -1,6 +1,6 @@
 <?php
 
-namespace Nekoding\Tripay\Exceptions;
+namespace Andreracodex\Tripay\Exceptions;
 
 use Illuminate\Validation\ValidationException;
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace Nekoding\Tripay\Transactions;
+namespace Andreracodex\Tripay\Transactions;
 
 use Illuminate\Support\Collection;
 
@@ -26,7 +26,7 @@ interface Transaction
     /**
      * @param array $data
      * @return string
-     * @throws \Nekoding\Tripay\Exceptions\InvalidCredentialException
+     * @throws \Andreracodex\Tripay\Exceptions\InvalidCredentialException
      */
     public function setSignatureHash(array $data): string;
 }

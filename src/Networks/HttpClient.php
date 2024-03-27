@@ -1,11 +1,12 @@
 <?php
 
-namespace Nekoding\Tripay\Networks;
+namespace Andreracodex\Tripay\Networks;
 
 use Exception;
 use GuzzleHttp\Client;
 use InvalidArgumentException;
 use League\Config\Exception\InvalidConfigurationException;
+use Andreracodex\Tripay\Exceptions\InvalidDataException;
 
 class HttpClient
 {
@@ -37,7 +38,7 @@ class HttpClient
         $apiKey = $apiKey ?? config('tripay.tripay_api_key');
 
         if (is_null($apiKey)) {
-            throw new InvalidConfigurationException("API_KEY belum dikonfigurasi");
+            throw new InvalidDataException("API_KEY belum dikonfigurasi");
         }
 
         $this->client = new Client([

@@ -1,18 +1,18 @@
 <?php
 
-namespace Nekoding\Tripay\Tests;
+namespace Andreracodex\Tripay\Tests;
 
 use Illuminate\Foundation\Testing\TestCase;
 use Illuminate\Support\Facades\Http;
 use Mockery;
 use Mockery\MockInterface;
-use Nekoding\Tripay\Exceptions\TripayValidationException;
-use Nekoding\Tripay\Networks\HttpClient;
-use Nekoding\Tripay\Signature;
-use Nekoding\Tripay\Transactions\CloseTransaction;
-use Nekoding\Tripay\Tripay;
-use Nekoding\Tripay\TripayFacade;
-use Nekoding\Tripay\TripayServiceProvider;
+use Andreracodex\Tripay\Exceptions\TripayValidationException;
+use Andreracodex\Tripay\Networks\HttpClient;
+use Andreracodex\Tripay\Signature;
+use Andreracodex\Tripay\Transactions\CloseTransaction;
+use Andreracodex\Tripay\Tripay;
+use Andreracodex\Tripay\TripayFacade;
+use Andreracodex\Tripay\TripayServiceProvider;
 use Orchestra\Testbench\Concerns\CreatesApplication;
 
 class TripayTest extends TestCase
@@ -57,7 +57,7 @@ class TripayTest extends TestCase
         config(['tripay.tripay_api_production' => true]);
 
         /**
-         * @var \Nekoding\Tripay\Networks\HttpClient
+         * @var \Andreracodex\Tripay\Networks\HttpClient
          */
         $fakeHttpClient = $this->mock(HttpClient::class, function (MockInterface $mock) {
             return $mock->shouldReceive('sendRequest')
@@ -96,7 +96,7 @@ class TripayTest extends TestCase
         ];
 
         /**
-         * @var \Nekoding\Tripay\Networks\HttpClient
+         * @var \Andreracodex\Tripay\Networks\HttpClient
          */
         $fakeHttpClient = $this->mock(HttpClient::class, function (MockInterface $mock) {
             return $mock->shouldReceive('sendRequest')
@@ -113,7 +113,7 @@ class TripayTest extends TestCase
     public function test_get_detail_closed_transaction()
     {
         /**
-         * @var \Nekoding\Tripay\Networks\HttpClient
+         * @var \Andreracodex\Tripay\Networks\HttpClient
          */
         $fakeHttpClient = $this->mock(HttpClient::class, function (MockInterface $mock) {
             return $mock->shouldReceive('sendRequest')
@@ -131,7 +131,7 @@ class TripayTest extends TestCase
     public function test_get_detail_open_transaction()
     {
         /**
-         * @var \Nekoding\Tripay\Networks\HttpClient
+         * @var \Andreracodex\Tripay\Networks\HttpClient
          */
         $fakeHttpClient = $this->mock(HttpClient::class, function (MockInterface $mock) {
             return $mock->shouldReceive('sendRequest')
@@ -149,7 +149,7 @@ class TripayTest extends TestCase
     public function test_get_instruksi_pembayaran()
     {
         /**
-         * @var \Nekoding\Tripay\Networks\HttpClient
+         * @var \Andreracodex\Tripay\Networks\HttpClient
          */
         $fakeHttpClient = $this->mock(HttpClient::class, function (MockInterface $mock) {
             return $mock->shouldReceive('sendRequest')
@@ -169,7 +169,7 @@ class TripayTest extends TestCase
     public function test_get_channel_pembayaran()
     {
         /**
-         * @var \Nekoding\Tripay\Networks\HttpClient
+         * @var \Andreracodex\Tripay\Networks\HttpClient
          */
         $fakeHttpClient = $this->mock(HttpClient::class, function (MockInterface $mock) {
             return $mock->shouldReceive('sendRequest')
@@ -188,7 +188,7 @@ class TripayTest extends TestCase
     public function test_get_biaya_transaksi()
     {
         /**
-         * @var \Nekoding\Tripay\Networks\HttpClient
+         * @var \Andreracodex\Tripay\Networks\HttpClient
          */
         $fakeHttpClient = $this->mock(HttpClient::class, function (MockInterface $mock) {
             return $mock->shouldReceive('sendRequest')
@@ -207,7 +207,7 @@ class TripayTest extends TestCase
     public function test_get_daftar_transaksi()
     {
         /**
-         * @var \Nekoding\Tripay\Networks\HttpClient
+         * @var \Andreracodex\Tripay\Networks\HttpClient
          */
         $fakeHttpClient = $this->mock(HttpClient::class, function (MockInterface $mock) {
             return $mock->shouldReceive('sendRequest')

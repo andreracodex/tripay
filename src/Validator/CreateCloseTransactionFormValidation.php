@@ -1,9 +1,9 @@
 <?php
 
-namespace Nekoding\Tripay\Validator;
+namespace Andreracodex\Tripay\Validator;
 
 use Illuminate\Support\Facades\Validator;
-use Nekoding\Tripay\Exceptions\TripayValidationException;
+use Andreracodex\Tripay\Exceptions\TripayValidationException;
 
 class CreateCloseTransactionFormValidation implements Validation
 {

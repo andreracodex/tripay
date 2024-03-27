@@ -1,6 +1,6 @@
 <?php
 
-namespace Nekoding\Tripay;
+namespace Andreracodex\Tripay;
 
 class Signature
 {
