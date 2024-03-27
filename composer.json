@@ -1,6 +1,7 @@
 {
     "name": "andreracodex/tripay",
     "description": "Tripay Payment Api Laravel 10",
+    "version": "1.0.0",
     "keywords": [
         "racodex",
         "tripay",
